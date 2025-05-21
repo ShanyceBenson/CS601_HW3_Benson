@@ -1,12 +1,155 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CS601_HW3_Benson</title>
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <div class="page-container">
+      <header>
+        🎨 MyPortfolio
+        <nav>
+          <ul>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About Me</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="content">
+        <aside>
+          <section id="about">
+            <h2>About Me</h2>
+            <p>
+              Hi, I’m Shanyce a web developer with a creative spirit, a
+              structured mind, and a love for all things purple. I’m currently
+              living in South Korea as a proud military spouse (my husband’s a
+              Blackhawk pilot!), building my career remotely while soaking in
+              new experiences and perspectives. When I’m not coding, you’ll
+              probably find me out for a walk or bike ride, controller in hand
+              playing Marvel Rivals, or tuned in to my favorite shows Tracker,
+              Will Trent, The Rookie, 911, and Found. I watch them faithfully
+              each week, and yes, I will cancel plans to avoid spoilers.
+            </p>
+            <h3>Fun Facts</h3>
+            <ul>
+              <li>
+                My favorite color is purple, it's not just a preference, it’s a
+                whole vibe.
+              </li>
+              <li>I’m a strategist at heart, both in games and in life.</li>
+              <li>
+                I play Marvel Rivals the most right now, but I also love Dead by
+                Daylight and Call of Duty.
+              </li>
+              <li>
+                Walking and biking are my go-to resets after long coding
+                sessions.
+              </li>
+              <li>
+                I’m totally that person who schedules life around TV nights. I
+                never miss an episode of Tracker, Will Trent, The Rookie, 911,
+                or Found.
+              </li>
+              <li>
+                I thrive in structured chaos: give me a challenge, and I’ll turn
+                it into a checklist.
+              </li>
+            </ul>
+          </section>
+        </aside>
+
+        <main id="projects">
+          <h2>My Projects</h2>
+          <div class="project-grid">
+            <div class="project">
+              <h2>Validation Form</h2>
+              <p>
+                This project is a simple subscription form that collects a
+                user's first name, last name, email, package selection, and
+                subscription confirmation. It includes client-side validation
+                using JavaScript to ensure proper input formats and required
+                field completion, excluding the optional email field. If all
+                inputs are valid, a personalized summary message is displayed,
+                and the form is hidden using DOM manipulation. The form's
+                validation logic uses regular expressions and the forEach()
+                high-order function for cleaner, modular code.
+              </p>
+              <a href="https://github.com/ShanyceBenson/CS601_HW1_Benson" target="_blank">
+                Check it out on Github
+              </a>
+            </div>
+
+            <div class="project">
+              <h2>Drag and Drop Game</h2>
+              <p>
+                This project is a simple web-based drag-and-drop game where
+                users categorize a list of movies and sitcoms. The data is
+                loaded dynamically from a package.json file and randomly
+                shuffled each time the page loads. Users drag each item into the
+                appropriate drop zone based on its category. The application is
+                built with HTML, CSS, and JavaScript and demonstrates event
+                handling, DOM manipulation, and basic interactive UI design.
+              </p>
+              <a href="https://github.com/ShanyceBenson/CS601_HW2_Benson" target="_blank">
+                Check it out on Github
+              </a>
+            </div>
+
+            <div class="project">
+              <h2>MyPortfolio</h2>
+              <p>
+                This project is a responsive one-page portfolio built using only
+                HTML5 and CSS, styled in a custom dark mode theme. It includes a
+                header and footer designed with Flexbox for proper alignment, a
+                CSS Grid-based project gallery, and a sidebar with personal
+                information. Interactivity is added through pseudo-classes like
+                :hover, :focus, and :nth-child(n), and enhanced visuals are
+                created using a ::before pseudo-element. The layout also
+                demonstrates advanced CSS skills like combinators, attribute
+                selectors, and ensures the footer stays at the bottom of the
+                page regardless of content height.
+              </p>
+              <a href="#" target="_blank">
+                Check it out on Github
+              </a>
+            </div>
+
+            <div class="project">
+              <h2>About Me Term Project</h2>
+              <p>
+                This project is a dark-themed, responsive personal portfolio
+                website built using React, HTML5, CSS3, and JavaScript. It
+                features a drag-and-drop game to showcase interactivity, a
+                visually styled resume timeline, and a working contact form
+                powered by Formspree. The layout is fully mobile-friendly with
+                adaptive design elements and modern animations for a polished
+                user experience. The site serves as both a personal introduction
+                and a professional showcase for web development skills.
+              </p>
+              <a href="https://shanycebenson.github.io/CS601_TermProject_Benson/" target="_blank">
+                Check it out on Github Pages
+              </a>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Shanyce Benson. All rights reserved.</p>
+      <div>
+        <a
+          href="https://www.linkedin.com/in/shanyce-benson-634730126/" target="_blank"
+          data-external="true">
+          LinkedIn
+          </a>
+        <a href="https://github.com/ShanyceBenson" target="_blank" data-external="true">
+          Github
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
